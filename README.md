@@ -1,6 +1,6 @@
-# maturanapp
+# GeniooApps
 How to run this app:
-open node.js cmd select folder maturanapp
+open node.js cmd select folder geniooapps
 1. npm install & npm install -g react-native-cli
 
 2. react-native start
