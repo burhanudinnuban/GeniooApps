@@ -396,12 +396,10 @@ class AuthScreen extends React.Component {
                 inputStyle={styles.inputInsideStyle}
                 placeholderTextColor="black"
                 secureTextEntry
-                // onChangeText={UserPassword => this.setState({UserPassword})}
                 onChangeText={pass => this.setState({ UserPassword: pass })}
                 value={this.state.UserPassword}
               />
             ) : null}
-
 
             <CheckBox
               activeOpacity={1}
