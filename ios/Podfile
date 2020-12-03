@@ -1,0 +1,85 @@
+platform :ios, '10.0'
+
+require_relative '../node_modules/react-native-unimodules/cocoapods'
+
+target 'genioo' do
+  # Pods for genioo
+  pod 'React', :path => '../node_modules/react-native', :subspecs => [
+    'Core',
+    'CxxBridge',
+    'DevSupport',
+    'RCTActionSheet',
+    'RCTAnimation',
+    'RCTBlob',
+    'RCTGeolocation',
+    'RCTImage',
+    'RCTLinkingIOS',
+    'RCTNetwork',
+    'RCTSettings',
+    'RCTText',
+    'RCTVibration',
+    'RCTWebSocket',
+  ]
+
+  pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
+
+  pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
+  pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
+  pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
+  pod 'RNGestureHandler', :podspec => '../node_modules/react-native-gesture-handler/RNGestureHandler.podspec'
+  pod 'RNReanimated', :podspec => '../node_modules/react-native-reanimated/RNReanimated.podspec'
+  pod 'RNScreens', :path => '../node_modules/react-native-screens'
+
+  use_unimodules!
+
+
+  pod 'RNCAsyncStorage', :path => '../node_modules/@react-native-community/async-storage'
+
+  pod 'react-native-webview', :path => '../node_modules/react-native-webview'
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+  pod 'react-native-onesignal', :path => '../node_modules/react-native-onesignal'
+
+  pod 'RNPermissions', :path => '../node_modules/react-native-permissions'
+
+
+
+  pod 'react-native-camera', :path => '../node_modules/react-native-camera'
+
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
+end
+=======
+=======
+=======
+<<<<<<< HEAD
+  pod 'react-native-fbsdk', :path => '../node_modules/react-native-fbsdk'
+
+  pod 'RNCMaskedView', :path => '../node_modules/@react-native-community/masked-view'
+
+  pod 'react-native-safe-area-context', :path => '../node_modules/react-native-safe-area-context'
+
+  pod 'RNSVG', :path => '../node_modules/react-native-svg'
+
+end
+=======
+>>>>>>> bcdcbab66967cd2a20badaaf42dabc6359724074
+>>>>>>> ff8a89fa79812ad38f4f9976b6e35bf089c60d08
+  pod 'RNFastImage', :path => '../node_modules/react-native-fast-image'
+
+  pod 'react-native-midtrans-payment', :path => '../node_modules/react-native-midtrans-payment'
+
+  pod 'react-native-splash-screen', :path => '../node_modules/react-native-splash-screen'
+
+  pod 'RNGoogleSignin', :path => '../node_modules/react-native-google-signin'
+
+end
+<<<<<<< HEAD
+>>>>>>> fa37318736ce7c69b1499f59d0564673fbc4f1db
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> fa37318736ce7c69b1499f59d0564673fbc4f1db
+>>>>>>> bcdcbab66967cd2a20badaaf42dabc6359724074
+>>>>>>> ff8a89fa79812ad38f4f9976b6e35bf089c60d08

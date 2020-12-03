@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "173784429591",
+    "firebase_url": "https://geniomobile-3e5df.firebaseio.com",
+    "project_id": "geniomobile-3e5df",
+    "storage_bucket": "geniomobile-3e5df.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:173784429591:android:18c6731b5d8cb20bd51852",
+        "android_client_info": {
+          "package_name": "com.genioo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "173784429591-6u2dhr2g797er0q7hlpc2u3t39iba24t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.genioo",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "173784429591-02vsmpk5ltc6ok3qujj3ttcile0o8dpr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBt3Wowe004sEFEpYeHFIInhiJ0unMaJK0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "173784429591-02vsmpk5ltc6ok3qujj3ttcile0o8dpr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

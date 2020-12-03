@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.midtrans:issuetracker:1.12.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/issuetracker-1.12.0.aar/1972cb64a818770e5db14ceb0dee9d7a/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/issuetracker-1.12.0.aar/1972cb64a818770e5db14ceb0dee9d7a/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

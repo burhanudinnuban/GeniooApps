@@ -1,0 +1,12 @@
+{
+    "editor.autoClosingBrackets": "always",
+    "editor.autoClosingOvertype": "never",
+    "editor.acceptSuggestionOnEnter": "smart",
+    "problems.autoReveal": false,
+    "auto-close-tag.SublimeText3Mode": true,
+    "autoimport.doubleQuotes": true,
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "git.ignoreLimitWarning": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true
+}

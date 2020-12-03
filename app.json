@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "Airmart – React Native e-commerce app template",
+    "description": "The biggest e-commerce application template has ever been made based on React Native. Inside you will found more than 30 screens for creating full-functionality e-commerce application. It is a high-performance applications template for your project and clients. The template contains: cart, profile, user cabinet, reorder functionality, attributes from products and more 30+  useful screens. Full presentation: http://bit.ly/2Re0yCK",
+    "slug": "airmart-ecommerce-app-template",
+    "privacy": "public",
+    "sdkVersion": "35.0.0",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "@drawable/ic_genioo_logo",
+    "splash": {
+      "image": "@drawable/ic_genioomobile",
+      "resizeMode": "cover",
+      "backgroundColor": "#000"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "entryPoint": "node_modules/expo/AppEntry.js"
+  },
+  "displayName": "@string/app_name",
+  "name": "@string/app_name"
+}
