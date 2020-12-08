@@ -85,7 +85,7 @@ class RegistrationEmailScreen extends React.Component {
       this.setState({
         emailValidate: false,
         phoneValidate: false,
-        Messange: "Masukkan email atau nomor ponsel yang benar",
+        Messange: "Masukkan email yang benar",
       });
       return true;
     }
@@ -255,22 +255,26 @@ class RegistrationEmailScreen extends React.Component {
                     }
                   }
                   else {
-                    if( responseJson == 0){
-                      this.props.navigation.navigate("OpsiVerifikasi", { phone: UserAkun });
-                    }
-                    else{
-                      Alert.alert(
-                        "Nomor Ponsel Sudah Terdaftar", 
-                        "Lanjut masuk dengan nomor ini " + UserAkun + "?",
-                        [
-                          { text: 'Ubah', onPress: () => console.log('No button clicked'), style: 'cancel' },
-                          { text: 'Ya, Masuk', onPress: () => this.props.navigation.navigate("OpsiVerifikasi", { phone: UserAkun, login: 1 })},
-                        ],
-                        {
-                          cancelable: true
-                        }
-                      );
-                    }
+                    // if( responseJson == 0){
+                    //   this.props.navigation.navigate("OpsiVerifikasi", { phone: UserAkun });
+                    // }
+                    // else{
+                    //   Alert.alert(
+                    //     "Nomor Ponsel Sudah Terdaftar", 
+                    //     "Lanjut masuk dengan nomor ini " + UserAkun + "?",
+                    //     [
+                    //       { text: 'Ubah', onPress: () => console.log('No button clicked'), style: 'cancel' },
+                    //       { text: 'Ya, Masuk', onPress: () => this.props.navigation.navigate("OpsiVerifikasi", { phone: UserAkun, login: 1 })},
+                    //     ],
+                    //     {
+                    //       cancelable: true
+                    //     }
+                    //   );
+                    // }
+
+                    Alert.alert(
+                      "Isikan alamat email yang benar"
+                    );
                     
                   }
             }
@@ -311,7 +315,7 @@ class RegistrationEmailScreen extends React.Component {
             <View style={styles.inputsContainer}>
               <Input
                 containerStyle={styles.inputContainerGlobal}
-                placeholder="Email atau Nomor Ponsel"
+                placeholder="Email"
                 // onChangeText={data => this.setState({ UserEmail: data.trim() })}
                 onChangeText={(data) => this.validText(data, "user")}
                 label="Akun"

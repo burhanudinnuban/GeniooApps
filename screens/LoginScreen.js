@@ -34,9 +34,9 @@ class AuthScreen extends React.Component {
       UserEmail: "",
       UserPassword: "",
       UserPhone: "",
-      UserAkun: "",
+      UserAkun:"",
       Tipe: "",
-      show: false,
+      show:false,
       Warning: "",
       isLoading: "",
       dataSource: "",
@@ -59,7 +59,7 @@ class AuthScreen extends React.Component {
           emailValidate: true,
           phoneValidate: true,
           UserAkun: data.trim(),
-          show: true,
+          show:true,
           Tipe: "email",
           Messange: "",
         });
@@ -70,7 +70,7 @@ class AuthScreen extends React.Component {
           emailValidate: true,
           phoneValidate: true,
           UserAkun: data.trim(),
-          show: false,
+          show:false,
           Tipe: "phone",
           Messange: "",
         });
@@ -98,7 +98,7 @@ class AuthScreen extends React.Component {
   }
 
   validate = () => {
-    const { UserAkun, Tipe, UserPassword, emailValidate, phoneValidate } = this.state;
+    const { UserAkun, Tipe,UserPassword, emailValidate,phoneValidate } = this.state;
     if (UserAkun == "") {
       alert("Please fill your email/phone");
       return false;
@@ -107,22 +107,22 @@ class AuthScreen extends React.Component {
       if (UserAkun == "") {
         alert("Please fill your email/phone");
         return false;
-      }
+      } 
     }
     else {
       if (emailValidate == false && phoneValidate == false) {
-        alert("Isi email atau nomor ponsel yang benar");
+        alert("Isi email ponsel yang benar");
         return false;
-      }
+      }   
     }
     return true;
   };
 
   static navigationOptions = ({ navigation }) => ({
     headerRight: (
-      <TouchableOpacity onPress={() => navigation.navigate("Registrasi")}>
-        <Text style={styles.linkTextHeader}>Daftar</Text>
-      </TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate("Registrasi")}>
+          <Text style={styles.linkTextHeader}>Daftar</Text>
+        </TouchableOpacity> 
     ),
     title: "Masuk",
     headerTitleStyle: {
@@ -158,28 +158,28 @@ class AuthScreen extends React.Component {
             () => {
               this.state.infoUser = this.state.dataSource;
               console.log('Data User : ', JSON.stringify(this.state.infoUser));
-              if (this.state.infoUser.email !== undefined) {
-                AsyncStorage.setItem("Email", this.state.infoUser.email);
-                AsyncStorage.setItem("id_konsumen", this.state.infoUser.id_user);
-                this.props.produk.fetchDataProduct(this.state.infoUser.id_user);
-                this.props.actions.fetchCartData(this.state.infoUser.id_user);
-                this.props.actionsProfile.fetchProfileData(this.state.infoUser.id_user);
-                AsyncStorage.setItem("isLoggedIn", "1");
-                Alert.alert(responseJson.email, "Berhasil Masuk");
-                if (this.props.cartItems.length > 0) {
-                  this.props.actions.mergeCartData(this.props.cartItems);
+                if (this.state.infoUser.email !== undefined) {
+                  AsyncStorage.setItem("Email", this.state.infoUser.email);
+                  AsyncStorage.setItem("id_konsumen", this.state.infoUser.id_user);
+                  this.props.produk.fetchDataProduct(this.state.infoUser.id_user);
+                  this.props.actions.fetchCartData(this.state.infoUser.id_user);
+                  this.props.actionsProfile.fetchProfileData(this.state.infoUser.id_user);
+                  AsyncStorage.setItem("isLoggedIn", "1");
+                  Alert.alert(responseJson.email, "Berhasil Masuk");
+                  if (this.props.cartItems.length > 0) {
+                    this.props.actions.mergeCartData(this.props.cartItems);
+                  }
+                  if (this.props.FromCart == 1) {
+                    this.props.navigation.navigate("FormDataPengiriman",
+                      { onGoBack: () => this.props.navigation.navigate("Cart") })
+                    this.props.actionsProfile.loginFromCart(0)
+                  }
+                  else {
+                    this.props.navigation.navigate("Main");
+                  }
+                } else {
+                  Alert.alert(responseJson);
                 }
-                if (this.props.FromCart == 1) {
-                  this.props.navigation.navigate("Main",
-                    { onGoBack: () => this.props.navigation.navigate("Home") })
-                  this.props.actionsProfile.loginFromCart(0)
-                }
-                else {
-                  this.props.navigation.navigate("Main");
-                }
-              } else {
-                Alert.alert(responseJson);
-              }
             }
           ).catch(error => {
             console.log(error);
@@ -190,7 +190,7 @@ class AuthScreen extends React.Component {
 
   // try again #13
   CallAPI = () => {
-    const { UserAkun, UserPassword, Tipe } = this.state;
+    const { UserAkun, UserPassword,Tipe } = this.state;
     this.setState({ loading: true });
 
     if (this.validate()) {
@@ -235,22 +235,26 @@ class AuthScreen extends React.Component {
                 }
               }
               else {
-                if (responseJson == 1) {
-                  this.props.navigation.navigate("OpsiVerifikasi", { phone: UserAkun, login: 1 });
-                }
-                else {
-                  Alert.alert(
-                    "Nomor Ponsel Belum Terdaftar",
-                    "Lanjut daftar dengan nomor ini " + UserAkun + "?",
-                    [
-                      { text: 'Ubah', onPress: () => console.log('No button clicked'), style: 'cancel' },
-                      { text: 'Ya, Daftar', onPress: () => this.props.navigation.navigate("OpsiVerifikasi", { phone: UserAkun }) },
-                    ],
-                    {
-                      cancelable: true
-                    }
+                // if (responseJson == 1) {
+                //   this.props.navigation.navigate("OpsiVerifikasi", { phone: UserAkun, login:1  });
+                // }
+                // else {
+                //   Alert.alert(
+                //     "Nomor Ponsel Belum Terdaftar",
+                //     "Lanjut daftar dengan nomor ini " + UserAkun + "?",
+                //     [
+                //       { text: 'Ubah', onPress: () => console.log('No button clicked'), style: 'cancel' },
+                //       { text: 'Ya, Daftar', onPress: () => this.props.navigation.navigate("OpsiVerifikasi", { phone: UserAkun }) },
+                //     ],
+                //     {
+                //       cancelable: true
+                //     }
+                //   );
+                // }
+
+                Alert.alert(
+                    "Isikan alamat email yang benar"
                   );
-                }
 
               }
             }
@@ -265,7 +269,7 @@ class AuthScreen extends React.Component {
   };
 
   async componentDidMount() {
-    if (this.props.navigation.state.params.email !== undefined) {
+    if(this.props.navigation.state.params.email!== undefined){
       this.setState({
         UserAkun: this.props.navigation.state.params.email,
         Tipe: 'email',
@@ -304,26 +308,26 @@ class AuthScreen extends React.Component {
           if (responseJson[0].email !== undefined || responseJson[0].email !== "") {
             if (responseJson[0].email !== undefined) {
               this.signOut();
-              AsyncStorage.setItem("Email", responseJson[0].email);
-              AsyncStorage.setItem("id_konsumen", responseJson[0].id_user);
-              // AsyncStorage.setItem('password', response.password);
-              this.props.produk.fetchDataProduct(responseJson[0].id_user);
-              this.props.actions.fetchCartData(responseJson[0].id_user);
-              this.props.actionsProfile.fetchProfileData(responseJson[0].id_user);
-              AsyncStorage.setItem("isLoggedIn", "1");
-              Alert.alert(responseJson[0].email, "Berhasil Masuk");
-              if (this.props.cartItems.length > 0) {
-                this.props.actions.mergeCartData(this.props.cartItems);
-              }
-              if (this.props.FromCart == 1) {
-
-                this.props.navigation.navigate("Main",
-                  { onGoBack: () => this.props.navigation.navigate("Cart") })
-                this.props.actionsProfile.loginFromCart(0)
-              }
-              else {
-                this.props.navigation.navigate("Main");
-              }
+                AsyncStorage.setItem("Email", responseJson[0].email);
+                AsyncStorage.setItem("id_konsumen", responseJson[0].id_user);
+                // AsyncStorage.setItem('password', response.password);
+                this.props.produk.fetchDataProduct(responseJson[0].id_user);
+                this.props.actions.fetchCartData(responseJson[0].id_user);
+                this.props.actionsProfile.fetchProfileData(responseJson[0].id_user);
+                AsyncStorage.setItem("isLoggedIn", "1");
+                Alert.alert(responseJson[0].email, "Berhasil Masuk");
+                if (this.props.cartItems.length > 0) {
+                  this.props.actions.mergeCartData(this.props.cartItems);
+                }
+                if(this.props.FromCart == 1){
+                  
+                  this.props.navigation.navigate("FormDataPengiriman",
+                    { onGoBack: () => this.props.navigation.navigate("Cart") })
+                  this.props.actionsProfile.loginFromCart(0)
+                }
+                else {
+                  this.props.navigation.navigate("Main");
+                }
             } else {
               Alert.alert(responseJson);
             }
@@ -357,7 +361,7 @@ class AuthScreen extends React.Component {
 
 
   render() {
-    const { Tipe, show, UserAkun } = this.state;
+    const { Tipe, show,UserAkun } = this.state;
     return (
       <ThemeProvider theme={theme}>
         <KeyboardAwareScrollView
@@ -375,7 +379,7 @@ class AuthScreen extends React.Component {
           <View style={styles.inputsContainer}>
             <Input
               containerStyle={styles.inputContainerGlobal}
-              placeholder="Email atau Nomor Ponsel"
+              placeholder="Email"
               // onChangeText={data => this.setState({ UserEmail: data.trim() })}
               onChangeText={(data) => this.validText(data, "user")}
               label="Akun"
@@ -385,7 +389,7 @@ class AuthScreen extends React.Component {
               inputStyle={styles.inputInsideStyle}
               placeholderTextColor="black"
             />
-
+            
             {show ? (
               <Input
                 containerStyle={styles.inputContainerGlobal}
@@ -396,10 +400,12 @@ class AuthScreen extends React.Component {
                 inputStyle={styles.inputInsideStyle}
                 placeholderTextColor="black"
                 secureTextEntry
+                // onChangeText={UserPassword => this.setState({UserPassword})}
                 onChangeText={pass => this.setState({ UserPassword: pass })}
                 value={this.state.UserPassword}
-              />
-            ) : null}
+              />  
+            ):null}
+            
 
             <CheckBox
               activeOpacity={1}
@@ -427,14 +433,16 @@ class AuthScreen extends React.Component {
             />
 
             {/* <Text style={styles.warning}>{this.state.Warning}</Text> */}
-            <Button
-              buttonStyle={styles.saveButton}
-              titleStyle={styles.titleButtonStyle}
-              title="Masuk"
-              containerStyle={styles.saveButtonContainer}
-              onPress={() => this.CallAPI()}
-            // onPress={() => alert(this.props.actions.showHideProfile())}
-            />
+                <Button
+                  buttonStyle={styles.saveButton}
+                  titleStyle={styles.titleButtonStyle}
+                  title="Masuk"
+                  containerStyle={styles.saveButtonContainer}
+                  onPress={() => this.CallAPI()}
+                // onPress={() => alert(this.props.actions.showHideProfile())}
+                />
+            
+            
 
             <Button
               buttonStyle={styles.saveButtonSosmed}
@@ -443,9 +451,9 @@ class AuthScreen extends React.Component {
               containerStyle={styles.saveButtonContainer}
               onPress={() => this._signIn()}
             />
-
+            
           </View>
-
+          
           <View style={styles.linkContainer}>
             <TouchableOpacity onPress={() => this.props.navigation.navigate("Registrasi")}>
               <Text style={styles.linkText}>Daftar</Text>
