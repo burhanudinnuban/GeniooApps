@@ -4,6 +4,7 @@ ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml
 INJECTED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:1:1-52:12
 INJECTED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:1:1-52:12
 INJECTED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:1:1-52:12
+MERGED from [:react-native-fs] D:\Codes\genioomobile-master\node_modules\react-native-fs\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-13:12
 MERGED from [:react-native-camera] D:\Codes\genioomobile-master\node_modules\react-native-camera\android\build\intermediates\library_manifest\mlkitDebug\AndroidManifest.xml:2:1-18:12
 MERGED from [:react-native-permissions] D:\Codes\genioomobile-master\node_modules\react-native-permissions\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-svg] D:\Codes\genioomobile-master\node_modules\react-native-svg\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
@@ -221,6 +222,8 @@ ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml
 		ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:23:22-68
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:24:5-81
+MERGED from [:react-native-fs] D:\Codes\genioomobile-master\node_modules\react-native-fs\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-81
+MERGED from [:react-native-fs] D:\Codes\genioomobile-master\node_modules\react-native-fs\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-81
 MERGED from [:expo-file-system] D:\Codes\genioomobile-master\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-81
 MERGED from [:expo-file-system] D:\Codes\genioomobile-master\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-81
 	android:name
@@ -367,6 +370,8 @@ uses-sdk
 INJECTED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml
 INJECTED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml
+MERGED from [:react-native-fs] D:\Codes\genioomobile-master\node_modules\react-native-fs\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-fs] D:\Codes\genioomobile-master\node_modules\react-native-fs\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-camera] D:\Codes\genioomobile-master\node_modules\react-native-camera\android\build\intermediates\library_manifest\mlkitDebug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-camera] D:\Codes\genioomobile-master\node_modules\react-native-camera\android\build\intermediates\library_manifest\mlkitDebug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-permissions] D:\Codes\genioomobile-master\node_modules\react-native-permissions\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41

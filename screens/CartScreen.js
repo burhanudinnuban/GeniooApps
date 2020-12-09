@@ -1,4 +1,3 @@
-import Icon from 'react-native-vector-icons/FontAwesome'
 import { AlertHelper } from './AlertHelper';
 import { format, isThisSecond } from "date-fns";
 import React, { Component } from "react";
@@ -8,6 +7,7 @@ import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scrollview"
 import Swipeout from "react-native-swipeout";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
+import { Ionicons } from "@expo/vector-icons";
 import AsyncStorage from "@react-native-community/async-storage";
 import { useSelector } from "react-redux";
 import * as profileActions from "../redux/actions/profileActions";
@@ -253,7 +253,7 @@ class CartScreen extends Component {
                                 // onPress={()=>(this.swipeHandleDelete())}
                                 style={styles.deleteIconContainer}
                               >
-                                <Icon name="trash" size={28} color="#F05829" />
+                                <Ionicons name="trash" size={28} color="#F05829" />
                               </TouchableOpacity>
                             ),
                             backgroundColor: "#fff",
@@ -291,8 +291,8 @@ class CartScreen extends Component {
                           <View style={styles.productCountButtons}>
                             <Button
                               buttonStyle={styles.plusButton}
-                              titleStyle={styles.titleButtonStyle}
-                              icon={<Ionicons name="plus" size={18} color="#000" />}
+                              titleStyle={styles.titleButtonStyle} 
+                              icon={<Ionicons name="ios-add" size={18} color="#000" />}
                               onPress={() => this.upItemToCart(item)}
                             />
                             <View style={styles.countValueContainer}>
@@ -301,7 +301,7 @@ class CartScreen extends Component {
                             <Button
                               buttonStyle={styles.minusButton}
                               titleStyle={styles.titleButtonStyle}
-                              icon={<Ionicons name="trash" size={18} color="#000" />}
+                              icon={<Ionicons name="ios-remove" size={18} color="#000" />}
                               onPress={() => this.minusItemToCart(item)}
                             />
                           </View>

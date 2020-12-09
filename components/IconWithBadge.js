@@ -1,5 +1,6 @@
 import React from "react";
 import { View, Text } from "react-native";
+import { } from "v"
 import { Ionicons } from "@expo/vector-icons";
 import colors from "../config/colors";
 

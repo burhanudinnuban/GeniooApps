@@ -1,6 +1,7 @@
 package com.genioo;
 import android.app.Application;
 import com.facebook.react.ReactApplication;
+import com.rnfs.RNFSPackage;
 import org.reactnative.camera.RNCameraPackage;
 import com.reactnativecommunity.rnpermissions.RNPermissionsPackage;
 import com.horcrux.svg.SvgPackage;
@@ -47,6 +48,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new RNFSPackage(),
             new RNCameraPackage(),
             new RNPermissionsPackage(),
             new SvgPackage(),

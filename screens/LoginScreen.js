@@ -379,10 +379,10 @@ class AuthScreen extends React.Component {
           <View style={styles.inputsContainer}>
             <Input
               containerStyle={styles.inputContainerGlobal}
-              placeholder="Email"
+              placeholder="Masukkan email anda"
               // onChangeText={data => this.setState({ UserEmail: data.trim() })}
               onChangeText={(data) => this.validText(data, "user")}
-              label="Akun"
+              label="Email"
               value={UserAkun}
               labelStyle={styles.inputLabelStyle}
               inputContainerStyle={styles.inputContainerStyle}
@@ -393,7 +393,7 @@ class AuthScreen extends React.Component {
             {show ? (
               <Input
                 containerStyle={styles.inputContainerGlobal}
-                placeholder="Password"
+                placeholder="Masukkan Password anda"
                 label="Password"
                 labelStyle={styles.inputLabelStyle}
                 inputContainerStyle={styles.inputContainerStyle}

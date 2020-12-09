@@ -12,11 +12,12 @@ import {
   SafeAreaView,
 } from "react-native";
 import { Button, ThemeProvider, Image, Input } from "react-native-elements";
-import Icon from 'react-native-vector-icons/FontAwesome';
+import { Ionicons } from "@expo/vector-icons";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scrollview";
 import { connect } from "react-redux";
 import { styles } from "../styles/HomeScreenStyles";
 import CartHeader from "../komponen/Cart.component";
+import { Icon } from "react-native-elements";
 // import { SliderBox } from "react-native-image-slider-box";
 import { FastImage } from "react-native-fast-image";
 
@@ -62,7 +63,7 @@ class HomeScreen extends React.Component {
         onPress={() => {
           navigation.goBack();
         }}
-        icon={<Icon name="arrow-alt-left" size={20} color="#000" />}
+        icon={<Ionicons name="ios-arrow-back" size={20} color="#000" />}
       />
     ),
     //   headerRight: <CartHeader navigation={navigation} />,
