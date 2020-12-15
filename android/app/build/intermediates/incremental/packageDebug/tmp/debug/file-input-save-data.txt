@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Dec 08 18:27:16 ICT 2020
+#Tue Dec 15 16:15:08 ICT 2020
 60.set=NATIVE_RESOURCE
 52.set=NATIVE_RESOURCE
 53.base=D\:\\Codes\\genioomobile-master\\android\\app\\build\\intermediates\\transforms\\mergeJniLibs\\debug\\0

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:1:1-52:12
-INJECTED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:1:1-52:12
-INJECTED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:1:1-52:12
-INJECTED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:1:1-52:12
+ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:1:1-50:12
+INJECTED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:1:1-50:12
+INJECTED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:1:1-50:12
+INJECTED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:1:1-50:12
 MERGED from [:react-native-fs] D:\Codes\genioomobile-master\node_modules\react-native-fs\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-13:12
 MERGED from [:react-native-camera] D:\Codes\genioomobile-master\node_modules\react-native-camera\android\build\intermediates\library_manifest\mlkitDebug\AndroidManifest.xml:2:1-18:12
 MERGED from [:react-native-permissions] D:\Codes\genioomobile-master\node_modules\react-native-permissions\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
@@ -123,20 +123,20 @@ MERGED from [com.facebook.soloader:soloader:0.6.0] C:\Users\burhan\.gradle\cache
 MERGED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\burhan\.gradle\caches\transforms-1\files-1.1\jetified-library-3.2.11.aar\3e3e3b5cb22f4dde4e1a3fa460edf179\AndroidManifest.xml:2:1-30:12
 MERGED from [com.android.installreferrer:installreferrer:1.0] C:\Users\burhan\.gradle\caches\transforms-1\files-1.1\jetified-installreferrer-1.0.aar\0ed85d993695579e36db8428f11358d4\AndroidManifest.xml:2:1-13:12
 MERGED from [com.facebook.fresco:fbcore:1.10.0] C:\Users\burhan\.gradle\caches\transforms-1\files-1.1\jetified-fbcore-1.10.0.aar\e41e300337eee08ef1d3cb5aba124ecf\AndroidManifest.xml:2:1-9:12
-INJECTED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:1:1-52:12
-INJECTED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:1:1-52:12
-INJECTED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:1:1-52:12
+INJECTED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:1:1-50:12
+INJECTED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:1:1-50:12
+INJECTED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:1:1-50:12
 	package
 		ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:2:5-25
 		INJECTED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml
-		ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:1:1-52:12
+		ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:1:1-50:12
 		INJECTED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml
-		ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:1:1-52:12
+		ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:1:1-50:12
 		INJECTED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:1:11-69
@@ -232,16 +232,8 @@ uses-permission#android.permission.WRITE_SETTINGS
 ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:25:5-73
 	android:name
 		ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:25:22-70
-uses-permission#android.permission.READ_SMS
-ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:26:5-67
-	android:name
-		ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:26:22-64
-uses-permission#android.permission.RECEIVE_SMS
-ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:27:5-70
-	android:name
-		ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:27:22-67
 application
-ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:30:5-50:19
+ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:28:5-48:19
 MERGED from [com.facebook.android:facebook-android-sdk:5.15.3] C:\Users\burhan\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-5.15.3.aar\adcfbf78adb4fe7b00258900aefcd4c5\AndroidManifest.xml:28:5-29:19
 MERGED from [com.facebook.android:facebook-android-sdk:5.15.3] C:\Users\burhan\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-5.15.3.aar\adcfbf78adb4fe7b00258900aefcd4c5\AndroidManifest.xml:28:5-29:19
 MERGED from [:react-native-splash-screen] D:\Codes\genioomobile-master\node_modules\react-native-splash-screen\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-12:19
@@ -323,49 +315,49 @@ MERGED from [com.android.installreferrer:installreferrer:1.0] C:\Users\burhan\.g
 	android:supportsRtl
 		ADDED from [com.facebook.android:facebook-android-sdk:5.15.3] C:\Users\burhan\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-5.15.3.aar\adcfbf78adb4fe7b00258900aefcd4c5\AndroidManifest.xml:28:18-44
 	android:label
-		ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:32:7-39
+		ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:30:7-39
 	android:roundIcon
-		ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:34:7-51
+		ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:32:7-51
 	android:icon
-		ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:33:7-46
+		ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:31:7-46
 	android:allowBackup
-		ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:35:7-34
+		ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:33:7-34
 	android:theme
-		ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:36:7-38
+		ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:34:7-38
 	android:usesCleartextTraffic
-		ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:37:7-42
+		ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:35:7-42
 	android:name
-		ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:31:7-38
+		ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:29:7-38
 meta-data#com.facebook.sdk.ApplicationId
-ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:38:7-105
+ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:36:7-105
 	android:value
-		ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:38:64-103
+		ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:36:64-103
 	android:name
-		ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:38:18-63
+		ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:36:18-63
 activity#com.genioo.MainActivity
-ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:39:7-48:18
+ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:37:7-46:18
 	android:label
-		ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:41:9-41
+		ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:39:9-41
 	android:windowSoftInputMode
-		ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:43:9-51
+		ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:41:9-51
 	android:configChanges
-		ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:42:9-79
+		ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:40:9-79
 	android:name
-		ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:40:9-37
+		ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:38:9-37
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:44:9-47:25
+ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:42:9-45:25
 action#android.intent.action.MAIN
-ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:45:13-65
+ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:43:13-65
 	android:name
-		ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:45:21-62
+		ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:43:21-62
 category#android.intent.category.LAUNCHER
-ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:46:13-73
+ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:44:13-73
 	android:name
-		ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:46:23-70
+		ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:44:23-70
 activity#com.facebook.react.devsupport.DevSettingsActivity
-ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:49:7-84
+ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:47:7-84
 	android:name
-		ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:49:17-81
+		ADDED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml:47:17-81
 uses-sdk
 INJECTED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Codes\genioomobile-master\android\app\src\main\AndroidManifest.xml

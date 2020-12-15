@@ -1,4 +1,4 @@
-#Wed Dec 09 11:23:18 ICT 2020
+#Tue Dec 15 16:39:06 ICT 2020
 base.0=D\:\\Codes\\genioomobile-master\\android\\app\\build\\intermediates\\transforms\\dexMerger\\release\\0
 path.1=classes2.dex
 renamed.1=classes2.dex

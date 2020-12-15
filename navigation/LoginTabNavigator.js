@@ -49,6 +49,7 @@ import Gopay from "../screens/PayIntegration/GoPay";
 import Card from "../screens/PayIntegration/CardCredit";
 import WebView from "../screens/PayIntegration/WebView";
 import ScanQRCode from "../screens/PayIntegration/ScanQRCode";
+import OpsiVerifikasiScreen from "../screens/OpsiVerifikasiScreen"
 
 const HomeStack = createStackNavigator({
   Home: HomeScreen,
@@ -65,7 +66,6 @@ const HomeStack = createStackNavigator({
   Registrasi: RegistrationScreen,
   OpsiVerifikasi: OpsiVerifikasiScreen,
   RegisterEmail: RegisterEmail,
-  RegisterPhone: RegisterPhone,
   Reviews: ReviewsScreen,
   WriteReview: WriteReviewScreen,
   SuccessReview: SuccessReviewScreen,
@@ -181,8 +181,6 @@ const ProfileStack = createStackNavigator({
   // TimerPayment: TimerPaymentScreen,
   HistoryOrder: HistoryOrderScreen,
   RegisterEmail: RegisterEmail,
-  RegisterPhone: RegisterPhone,
-  OTP: OtpVerification,
   Profile: ProfileScreen,
   InputPassword: InputPasswordScreen,
   LostPassword: LostPasswordScreen,

@@ -6,6 +6,7 @@ import { GoogleSignin, GoogleSigninButton, statusCodes } from "react-native-goog
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scrollview";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
+import OpsiVerifikasiScreen from "../screens/OpsiVerifikasiScreen"
 import { styles } from "../styles/LoginStyles";
 import AsyncStorage from "@react-native-community/async-storage";
 import * as profileActions from "../redux/actions/profileActions";
@@ -441,17 +442,6 @@ class AuthScreen extends React.Component {
                   onPress={() => this.CallAPI()}
                 // onPress={() => alert(this.props.actions.showHideProfile())}
                 />
-            
-            
-
-            <Button
-              buttonStyle={styles.saveButtonSosmed}
-              titleStyle={styles.titleButtonStyleSosmed}
-              title="Google"
-              containerStyle={styles.saveButtonContainer}
-              onPress={() => this._signIn()}
-            />
-            
           </View>
           
           <View style={styles.linkContainer}>

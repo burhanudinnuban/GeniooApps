@@ -8,6 +8,7 @@ import {
   TouchableWithoutFeedback,
   View,
 } from "react-native";
+import OpsiVerifikasiScreen from "../screens/OpsiVerifikasiScreen"
 import { Button, Image, Input, ThemeProvider } from "react-native-elements";
 import { AccessToken, LoginButton } from "react-native-fbsdk";
 import {
@@ -351,27 +352,7 @@ class RegistrationEmailScreen extends React.Component {
                 />
                 <Text style={styles.titleButtonStyleSosmed}>Google</Text>
               </TouchableOpacity> */}
-              <Button
-                buttonStyle={styles.saveButtonSosmed}
-                titleStyle={styles.titleButtonStyleSosmed}
-                title="Google"
-                containerStyle={styles.saveButtonContainer}
-                onPress={() => this._signIn()}
-              />
-              <LoginButton
-                onLoginFinished={(error, result) => {
-                  if (error) {
-                    console.log(`login has error: ${result.error}`);
-                  } else if (result.isCancelled) {
-                    console.log("login is cancelled.");
-                  } else {
-                    AccessToken.getCurrentAccessToken().then((data) => {
-                      console.log(data.accessToken.toString());
-                    });
-                  }
-                }}
-                onLogoutFinished={() => console.log("logout.")}
-              />
+              
             </View>
             <View style={styles.linkContainer}>
               <TouchableOpacity
