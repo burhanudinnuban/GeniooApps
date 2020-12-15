@@ -32,17 +32,9 @@ import JasaPengiriman from "../komponen/JasaPengiriman";
 import FormDataPengiriman from "../komponen/FormDataPengiriman";
 import TimerPaymentScreen from "../screens/TimerPaymentScreen";
 import HistoryOrderScreen from "../screens/HistoryOrderScreen";
-import Gopay from "../screens/PayIntegration/GoPay";
-import Card from "../screens/PayIntegration/CardCredit";
-import WebView from "../screens/PayIntegration/WebView";
-import ScanQRCode from "../screens/PayIntegration/ScanQRCode";
 
 const HomeStack = createStackNavigator({
   Home: HomeScreen,
-  GoPay: Gopay,
-  ScanQRCode: ScanQRCode,
-  Card: Card,
-  WebView: WebView,
   Product: ProductScreen,
   ProductInformation: ProductInformationScreen,
   Checkout: CheckoutScreen,
@@ -63,20 +55,6 @@ const HomeStack = createStackNavigator({
 //   <HomeStack.Navigator
 // }
 
-const getScreenRegisteredFunctions = navState => {
-  // When we use stack navigators. 
-  // Also needed for react-navigation@2
-  const { routes, index, params } = navState;
-
-  if (navState.hasOwnProperty('index')) {
-    return getScreenRegisteredFunctions(routes[index]);
-  }
-  // When we have the final screen params
-  else {
-    return params;
-  }
-}
-
 HomeStack.navigationOptions = ({ navigation }) => ({
   tabBarVisible: ({ navigation }) => {
     const { routeName } = navigation.state;
@@ -89,13 +67,6 @@ HomeStack.navigationOptions = ({ navigation }) => ({
   },
   tabBarOnPress: ({ navigation, defaultHandler }) => {
     navigation.navigate("Home");
-    if (navigation && navigation.isFocused()) {
-      const screenFunctions = getScreenRegisteredFunctions(navigation.state);
-
-      if (screenFunctions && typeof screenFunctions.tapOnTabNavigator === 'function') {
-        screenFunctions.tapOnTabNavigator()
-      }
-    }
     defaultHandler();
   },
   tabBarLabel: "Home",
@@ -106,7 +77,7 @@ HomeStack.navigationOptions = ({ navigation }) => ({
       name={Platform.OS === "ios" ? `ios-home${focused ? "" : ""}` : "md-home"}
     />
   ),
-  // tabBarVisible: !(navigation.state.index > 0),
+  tabBarVisible: !(navigation.state.index > 0),
   tabBarOptions: {
     activeTintColor: colors.primary,
     inactiveTintColor: colors.gray,
@@ -130,16 +101,9 @@ const CartStack = createStackNavigator({
 CartStack.navigationOptions = ({ navigation }) => ({
   tabBarOnPress: ({ navigation, defaultHandler }) => {
     navigation.navigate("History");
-    if (navigation && navigation.isFocused()) {
-      const screenFunctions = getScreenRegisteredFunctions(navigation.state);
-
-      if (screenFunctions && typeof screenFunctions.tapOnTabNavigator === 'function') {
-        screenFunctions.tapOnTabNavigator()
-      }
-    }
     defaultHandler();
   },
-  // tabBarVisible: !(navigation.state.index > 0),
+  tabBarVisible: !(navigation.state.index > 0),
   tabBarLabel: "History",
   tabBarIcon: ({ focused }) => (
     <TabBarIcon focused={focused} name={Platform.OS === "ios" ? "ios-cart" : "md-book"} />
@@ -176,16 +140,9 @@ const ProfileStack = createStackNavigator({
 ProfileStack.navigationOptions = ({ navigation }) => ({
   tabBarOnPress: ({ navigation, defaultHandler }) => {
     navigation.navigate("Profile");
-    if (navigation && navigation.isFocused()) {
-      const screenFunctions = getScreenRegisteredFunctions(navigation.state);
-
-      if (screenFunctions && typeof screenFunctions.tapOnTabNavigator === 'function') {
-        screenFunctions.tapOnTabNavigator()
-      }
-    }
     defaultHandler();
   },
-  // tabBarVisible: !(navigation.state.index > 0),
+  tabBarVisible: !(navigation.state.index > 0),
   tabBarLabel: "Profil",
   tabBarIcon: ({ focused }) => (
     <TabBarIcon focused={focused} name={Platform.OS === "ios" ? "ios-contact" : "md-contact"} />

@@ -5,7 +5,7 @@ import { Platform } from "react-native";
 import {
   createBottomTabNavigator,
   createStackNavigator,
-  createDrawerNavigator,
+  createDrawerNavigator,  
 } from "react-navigation";
 import TabBarIcon from "../components/TabBarIcon";
 import AlatScreen from "../screens/AlatScreen";
@@ -23,6 +23,7 @@ import LostPasswordScreen from "../screens/LostPasswordScreen";
 //import CustomerFormScreen from "../komponen/CustomerForm.component";
 import Midtrans from "../screens/Midtrans";
 import MTPaymentScreen from "../screens/MTPaymentScreen";
+import OtpVerification from "../screens/OtpVerification";
 //import OrdersScreen from "../screens/OrdersScreen";
 import ProductInformationScreen from "../screens/ProductInformationScreen";
 //import DeliveryScreen from "../screens/DeliveryScreen";
@@ -34,7 +35,9 @@ import HistoryScreen from "../screens/HistoryScreen";
 import RegistrationScreen from "../screens/RegisterScreen";
 import ReviewsScreen from "../screens/ReviewsScreen";
 import SaranaScreen from "../screens/SaranaScreen";
+import OpsiVerifikasiScreen from "../screens/OpsiVerifikasiScreen";
 import RegisterEmail from "../screens/RegisterEmail";
+import RegisterPhone from "../screens/RegisterPhone";
 import TimerPaymentScreen from "../screens/TimerPaymentScreen";
 import HistoryOrderScreen from "../screens/HistoryOrderScreen";
 //import DeliveryAddressScreen from "../screens/DeliveryAddressScreen";
@@ -45,18 +48,9 @@ import SuccessReviewScreen from "../screens/SuccessReviewScreen";
 //import AccountCreatedSuccessScreen from "../screens/AccountCreatedSuccessScreen";
 import WriteReviewScreen from "../screens/WriteReviewScreen";
 import colors from "../config/colors";
-import Gopay from "../screens/PayIntegration/GoPay";
-import Card from "../screens/PayIntegration/CardCredit";
-import WebView from "../screens/PayIntegration/WebView";
-import ScanQRCode from "../screens/PayIntegration/ScanQRCode";
-import OpsiVerifikasiScreen from "../screens/OpsiVerifikasiScreen"
 
 const HomeStack = createStackNavigator({
   Home: HomeScreen,
-  GoPay: Gopay,
-  ScanQRCode: ScanQRCode,
-  Card: Card,
-  WebView: WebView,
   Product: ProductScreen,
   ProductInformation: ProductInformationScreen,
   Checkout: CheckoutScreen,
@@ -66,6 +60,7 @@ const HomeStack = createStackNavigator({
   Registrasi: RegistrationScreen,
   OpsiVerifikasi: OpsiVerifikasiScreen,
   RegisterEmail: RegisterEmail,
+  RegisterPhone: RegisterPhone,
   Reviews: ReviewsScreen,
   WriteReview: WriteReviewScreen,
   SuccessReview: SuccessReviewScreen,
@@ -77,33 +72,12 @@ const HomeStack = createStackNavigator({
   Notif: NotificationScreen,
 });
 
-const getScreenRegisteredFunctions = navState => {
-  // When we use stack navigators. 
-  // Also needed for react-navigation@2
-  const { routes, index, params } = navState;
-
-  if (navState.hasOwnProperty('index')) {
-    return getScreenRegisteredFunctions(routes[index]);
-  }
-  // When we have the final screen params
-  else {
-    return params;
-  }
-}
-
 HomeStack.navigationOptions = ({ navigation }) => ({
   tabBarOnPress: ({ navigation, defaultHandler }) => {
-    navigation.navigate("Home");
+    navigation.navigate("");
     defaultHandler();
-    if (navigation && navigation.isFocused()) {
-      const screenFunctions = getScreenRegisteredFunctions(navigation.state);
-
-      if (screenFunctions && typeof screenFunctions.tapOnTabNavigator === 'function') {
-        screenFunctions.tapOnTabNavigator()
-      }
-    }
   },
-  // tabBarVisible: !(navigation.state.index > 0),
+  tabBarVisible: !(navigation.state.index > 0),
   tabBarLabel: "Home",
   tabBarIcon: ({ focused, tintColor }) => (
     <TabBarIcon
@@ -138,16 +112,9 @@ const CartStack = createStackNavigator({
 CartStack.navigationOptions = ({ navigation }) => ({
   tabBarOnPress: ({ navigation, defaultHandler }) => {
     navigation.navigate("History");
-    if (navigation && navigation.isFocused()) {
-      const screenFunctions = getScreenRegisteredFunctions(navigation.state);
-
-      if (screenFunctions && typeof screenFunctions.tapOnTabNavigator === 'function') {
-        screenFunctions.tapOnTabNavigator()
-      }
-    }
     defaultHandler();
   },
-  // tabBarVisible: !(navigation.state.index > 0),
+  tabBarVisible: !(navigation.state.index > 0),
   tabBarLabel: "History",
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
@@ -174,13 +141,15 @@ CartStack.navigationOptions = ({ navigation }) => ({
 const ProfileStack = createStackNavigator({
   // nambah link disini... "dipanggil": nama-di-atas
   // Orders: OrdersScreen,
-
+  
   Login: LoginScreen,
   Registrasi: RegistrationScreen,
   OpsiVerifikasi: OpsiVerifikasiScreen,
   // TimerPayment: TimerPaymentScreen,
   HistoryOrder: HistoryOrderScreen,
   RegisterEmail: RegisterEmail,
+  RegisterPhone: RegisterPhone,
+  OTP: OtpVerification,
   Profile: ProfileScreen,
   InputPassword: InputPasswordScreen,
   LostPassword: LostPasswordScreen,
@@ -191,15 +160,9 @@ const ProfileStack = createStackNavigator({
 ProfileStack.navigationOptions = ({ navigation }) => ({
   tabBarOnPress: ({ navigation, defaultHandler }) => {
     navigation.navigate("Login");
-    if (navigation && navigation.isFocused()) {
-      const screenFunctions = getScreenRegisteredFunctions(navigation.state);
-
-      if (screenFunctions && typeof screenFunctions.tapOnTabNavigator === 'function') {
-        screenFunctions.tapOnTabNavigator()
-      }
-    }
+    
   },
-  // tabBarVisible: !(navigation.state.index > 0),
+  tabBarVisible: !(navigation.state.index > 0),
   tabBarLabel: "Masuk",
   tabBarIcon: ({ focused }) => (
     <TabBarIcon

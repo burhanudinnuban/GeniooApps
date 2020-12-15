@@ -252,7 +252,7 @@ const styles = StyleSheet.create({
   linkText: {
     fontFamily: "Roboto",
     fontSize: 12,
-    color: 'black'
+    color: "#00CED1",
   },
   verticalLine: {
     borderLeftWidth: 1,
