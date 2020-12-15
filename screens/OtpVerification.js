@@ -244,7 +244,7 @@ const OtpVerification = function (props) {
           }
         }
         else {
-          AlertHelper.show('error', 'Error', 'OTP Salah ')
+          AlertHelper.show('error', 'Error', responseJson)
         }
       });
   };

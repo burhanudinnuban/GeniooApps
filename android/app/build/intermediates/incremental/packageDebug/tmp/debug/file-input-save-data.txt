@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Dec 15 20:54:58 ICT 2020
+#Wed Dec 16 06:06:48 ICT 2020
 60.set=NATIVE_RESOURCE
 52.set=NATIVE_RESOURCE
 53.base=D\:\\ReactNative\\GeniooApps\\android\\app\\build\\intermediates\\transforms\\mergeJniLibs\\debug\\0
