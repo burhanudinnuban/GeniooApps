@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\ReactNative\\GeniooApps\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
+            "outputFile": "D:\\Codes\\genioomobile-master\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\fahmi\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.1.0.aar\\3d08c8a308821c42c288d039d0f69a75\\res\\values-night-v8\\values-night-v8.xml",
+                    "source": "C:\\Users\\burhan\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.1.0.aar\\0378245baa337c5558d30fbe30b02157\\res\\values-night-v8\\values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\fahmi\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.1.0.aar\\d1d60acc6aaf03046662a8d9115b0d75\\res\\values-night-v8\\values-night-v8.xml",
+                    "source": "C:\\Users\\burhan\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.1.0.aar\\9a2ce88066d8f034021262703da08d72\\res\\values-night-v8\\values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
